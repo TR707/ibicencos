@@ -4,7 +4,6 @@
 	function enter() {
 		hovering = true;
 	}
-
 	function leave() {
 		hovering = false;
 	}

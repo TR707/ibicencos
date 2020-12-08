@@ -3,11 +3,10 @@
       import Button from "../shared/Button.svelte";
    </script>
 
-   <section>
-        <img src="/img/EBM.png" alt="portada EBM Madrid Obsession" class="ebm"><br>
+   <section><br>
         <h3 class="blue">EBM Madrid Obsession</h3><br>
+        <img src="/img/EBM.png" alt="portada EBM Madrid Obsession" class="ebm"><br>
    </section>
-           
         <p>Un joven que esconde problemas mentales se pasa cada fin de semana 
            castigado en su habitación. Un día, cansado de malgastar su vida, 
            decide arriesgarse y huir del hogar familiar. <br><br>
@@ -36,10 +35,14 @@
            entiende que nos marchábamos sin todo, y nos regala los teclados, la pandereta y 
            la guitarra del Run With You de Midnight, y comprendo que justo en ese instante, 
            en medio de los gritos, la excitación y la felicidad colectiva, mi vida ha 
-           alcanzado su cenit"</p>.<br><br> 
-           <a target="_blank" href="https://amzn.to/35jlFfr">
-                <Button> Comprar en Amazon (papel) </Button>
+           alcanzado su cenit".</p><br>
+           <div class="container">
+            <div class="center"> 
+           <a target="_blank" href="https://amzn.to/35jlFfr" class="conecta">
+                <Button>Comprar en Amazon</Button>
            </a>
+           </div> 
+           </div> <br>  
 <style>
     .ebm {
         border-radius: 5px;
@@ -48,11 +51,26 @@
         margin: 0px auto;
         width: 200px;
     }
+    .ebm:hover {
+        border-radius: 5px;
+        transition: width 0.1s, height 0.1s;
+        display: block;
+        margin: 0px auto;
+        width: 220px;
+    }
     @media screen and (max-width: 650px) {
     .ebm {
         width: 70vw;
     }
     }
+    .center {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+
 </style>
                    
                   

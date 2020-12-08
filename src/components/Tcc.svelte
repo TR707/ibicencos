@@ -4,10 +4,10 @@
     import Hoverable from './Hoverable.svelte';
  </script>
 
-<section>
-    <img src="/img/Techno Camina Conmigo.jpg" alt="portada Techno Camina Conmigo" class="tecece"><br>
+<section><br>
     <h3 class="blue">Techno Camina Conmigo:<br>Bandas y productores que lideraron 
         la electrónica nacional (89-93)</h3><br>
+    <img src="/img/Techno Camina Conmigo.jpg" alt="portada Techno Camina Conmigo" class="tecece"><br>
 </section>        
         <p>Durante la segunda década de los 80, Valencia se ha convertido en una de las 
         capitales europeas de la vanguardia musical por su atractiva combinación de 
@@ -65,41 +65,53 @@
         me dice que ya la conoce…» <b>(Juan Laforga aka Ritual)</b>.<br><br>
         «Un DJ es un educador, y también un psicólogo. Porque la sesión hay que trabajarla con 
         mucha psicología, controlando las sensaciones que la gente expresa en la 
-        pista…» <b>(Nacho Division aka Mirage Of Deep)</b>.<br><br></p>
-
-        <Hoverable let:hovering={hover}>
-            <div>
-            <button class:hover>
-                {#if hover}
-                <a target="_blank" href="https://amzn.to/36ux9Mn">
+        pista…» <b>(Nacho Division aka Mirage Of Deep)</b></p>.
+        <div class="container">
+        <div class="center">
+            <Hoverable let:hovering={hover}>
+                <div>
+                <button class:hover>
+                    {#if hover}
+                    <a target="_blank" href="https://amzn.to/36ux9Mn" class="conecta">
                     <Button> Tapa blanda </Button>
-                </a>
-                <a target="_blank" href="https://amzn.to/3pmcnHp">
-                    <Button> ebook </Button>
-                </a>
-                {:else}
-                    <Button>Comprar en Amazon</Button>
-                {/if}
-            </button>
-            </div>
-        </Hoverable>
-
+                    </a>
+                    <a target="_blank" href="https://amzn.to/3pmcnHp" class="conecta">
+                        <Button> ebook </Button>
+                    </a>
+                    {:else}
+                        <Button>Comprar en Amazon</Button>
+                    {/if}
+                </button>
+                </div>
+            </Hoverable>
+    </div>
+    </div>
 <style>
     .tecece {
         border-radius: 5px;
         transition: width 0.1s, height 0.1s;
         display: block;
         margin: 0px auto;
+        width: 200px;
+    }
+    .tecece:hover {
+        border-radius: 5px;
+        transition: width 0.1s, height 0.1s;
+        display: block;
+        margin: 0px auto;
+        width: 220px;
     }
     @media screen and (max-width: 650px) {
     .tecece {
         width: 70vw;
     }
     }
-    @media screen and (min-width: 650px) {
-    .tecece {
-        width: 70vw;
-    }
-    }
-    </style>
+    .center {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+</style>
                 

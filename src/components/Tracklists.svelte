@@ -4,8 +4,8 @@
 <br>
 <h3 class="blue">EBM Madrid Obsession</h3><br>
 <br>
-    <p>Estos son los temas mencionados durante la narración de EBM Madrid Obsession. 
-    Asegúrate de llevar el calzado adecuado:<br><br>
+    <p>Estos son los temas mencionados durante la narración de EBM Madrid Obsession<br> 
+    (asegúrate de llevar el calzado adecuado):<br><br>
     101 - Just As Long As I Got You<br>
     16 BIT - Too Fast To Live<br>
     2 In A Room - Do What You Want<br>
@@ -169,5 +169,3 @@
     Zsa Zsa Laboum - Something Scary<br>
   </p>
 
-<style>
-</style>

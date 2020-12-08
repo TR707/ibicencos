@@ -4,9 +4,9 @@
     import Hoverable from './Hoverable.svelte';
  </script>
 
-<section>
-    <img src="/img/New Beat.jpg" alt="portada New Beat" class="nb"><br>
+<section><br>
     <h3 class="blue">New Beat: bombos & estrobos</h3><br>
+    <img src="/img/New Beat.jpg" alt="portada New Beat" class="nb"><br>
 </section>       
     <p>Madrid, 1991, Km. 15,500 de una carretera cualquiera. Cuatro historias underground: 
         bombos, estrobos, mescalinas y unos pocos discos mágicos... Y los aviones sobrevolando 
@@ -46,40 +46,53 @@
         Subo un fader, bajo el otro, y luego al revés. Miaaaaaaaaaaau... La pista es un 
         clamor...”.<br><br>
         New Beat: Bombos & Estrobos es la versión actualizada de Atticanos, también de 
-        Pascal Ibiza.<br><br></p>
+        Pascal Ibiza.</p><br>
+        <div class="container"> 
+            <div class="center">
+            <Hoverable let:hovering={hover}>
+                <div>
+                <button class:hover>
+                    {#if hover}
+                    <a target="_blank" href="https://amzn.to/2IqF0CI" class="conecta">
+                        <Button> Tapa blanda </Button>
+                    </a>
+                    <a target="_blank" href="https://amzn.to/38AKZ2C" class="conecta">
+                        <Button> ebook </Button>
+                    </a>
+                    {:else}
+                        <Button>Comprar en Amazon</Button>
+                    {/if}
+                </button>
+                </div>
+            </Hoverable> 
+        </div>
+    </div><br>
 
-        <Hoverable let:hovering={hover}>
-            <div>
-            <button class:hover>
-                {#if hover}
-                <a target="_blank" href="https://amzn.to/2IqF0CI">
-                    <Button> Tapa blanda </Button>
-                </a>
-                <a target="_blank" href="https://amzn.to/38AKZ2C">
-                    <Button> ebook </Button>
-                </a>
-                {:else}
-                    <Button>Comprar en Amazon</Button>
-                {/if}
-            </button>
-            </div>
-        </Hoverable> 
- 
 <style>
-    .nb {
+.nb {
         border-radius: 5px;
         transition: width 0.1s, height 0.1s;
         display: block;
         margin: 0px auto;
+        width: 200px;
+    }
+    .nb:hover {
+        border-radius: 5px;
+        transition: width 0.1s, height 0.1s;
+        display: block;
+        margin: 0px auto;
+        width: 220px;
     }
     @media screen and (max-width: 650px) {
     .nb {
         width: 70vw;
     }
     }
-    @media screen and (min-width: 650px) {
-    .nb {
-        width: 70vw;
-    }
-    }
+    .center {
+	position: absolute;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+
 </style>

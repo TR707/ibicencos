@@ -38,14 +38,15 @@
 </div>
 <Footer />
 
-
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
-	
-	.loco {
+		.loco {
 		margin-top: 40px;
 		font-family: 'Share Tech Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 		font-size: 27px;
 		text-decoration: none;
+    	color: white;
+    	background-color: white;
+    	border-color:white;
 	}
 </style>	 	

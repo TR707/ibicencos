@@ -10,42 +10,50 @@
 
 <style>
     button {
-        border:0;
+        border: 0;
         cursor: pointer;
         border-radius: 6px;
         padding: 8px 8px;
-        font-weight:bold;
-        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-
+        box-shadow: 1px 2px 3px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -4px;
+        margin-bottom: -4px;
+        width: 170px;  
     } 
-    .primary {
-        background: gold;
-        color: black;
+    button:link {
+        text-decoration: none;   
+    }
+    .primary, .secondary, .primary.inverse, .secondary.inverse  {
         border: 2px solid black;
     }
-    .secondary {
+    .primary, .secondary {
         background: gold;
         color: black;
-        border: 2px solid black;
+    }
+    .primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondary {
         font-family: 'Share Tech Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", 
-                      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  
+                      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;   
     }
     .flat{
         box-shadow:none;
-        background-color: #f5f5f5;
+        background-color: white;
         background: gold;
     }
-    .primary.inverse {
+    .primary.inverse, .secondary.inverse {
         color: gold;
         background: black;
-        border: 2px solid black;
     }
-    .secondary.inverse {
-        color: gold;
-        background: black;
-        border: 2px solid black;
-    }
-    .slot {
-        background-color: #f5f5f5;
+
+    button:hover {
+        text-decoration: none;   
     }
 </style>

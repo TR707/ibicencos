@@ -12,11 +12,10 @@
  h1 {
     font-family: 'Boogaloo', cursive;
     font-size: 70px;
-     font-weight: lighter;
-     margin-top: 60px;
-     margin-bottom: 30px;
-      color: black;	
-     text-align: center;
+    font-weight: lighter;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   @media screen and (max-width: 600px) {
